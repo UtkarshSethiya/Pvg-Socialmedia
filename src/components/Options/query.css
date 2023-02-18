@@ -1,0 +1,18 @@
+
+
+.select{
+  width: 700px;
+  padding: 10px;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 4px;
+}
+
+.options{
+  padding: 8px;
+}
+.modal{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  border-radius: 30px;
+  border: none;
+  outline: none !important;
+}

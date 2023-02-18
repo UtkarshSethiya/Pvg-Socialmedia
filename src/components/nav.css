@@ -1,0 +1,36 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 20px;
+    background: rgb(162,160,215);
+    background: linear-gradient(90deg, rgb(89, 83, 255) 0%, rgba(15,10,83,1) 0%, rgb(62, 32, 255) 100%, rgba(130,121,255,1) 100%, rgba(247,247,247,1) 100%);
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav div a{
+    margin-right: 20px;
+}
+.topleft{
+    display: flex;
+    align-items: center;
+    
+}
+.pvg{
+    color: white;
+    margin-right: 15px;
+}
+.logoutbutton{
+    background:none;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+.logoutbutton:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

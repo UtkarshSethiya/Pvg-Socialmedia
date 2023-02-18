@@ -1,0 +1,12 @@
+.notification_cont{
+    margin: 20px;
+    height: 500px;
+    overflow-y: scroll;
+}
+.notification_title{
+    background-color: aqua;
+}
+.title{
+    margin-left: 25px;
+    text-align: center;
+}

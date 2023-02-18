@@ -1,0 +1,80 @@
+
+  .user_wrapper {
+   
+    border-bottom: 0.1px dotted grey;
+    padding: 4px;
+   
+    cursor: pointer;
+  }
+.user_wrapper:hover{
+  background-color: rgb(245, 245, 245);
+}
+  .user_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .user_detail {
+    display: flex;
+    align-items: center;
+  }
+  .user_detail h4 {
+    margin-left: 10px;
+  }
+  .profileimage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  }
+  .user_status {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  .online {
+    background: #14e237;
+  }
+  .offline {
+    background: rgb(124, 124, 124);
+  }
+  .username{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    margin-left: 8px;
+  }
+  .selected_user {
+    background-color: rgb(232, 232, 232);
+  }
+  .truncate {
+   
+    font-size: 12px;
+    white-space: nowrap;
+    width: 90%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(0, 0, 0);
+  }
+ 
+  .unread {
+    margin-left: 10px;
+    background: blue;
+    color: white;
+    padding: 2px 4px;
+    border-radius: 10px;
+  }
+.lastmessage_wrapper{
+
+ margin-left: 8px;
+  }
+
+
+  /*
+
+
+
+  
+       
+
+
+        */
