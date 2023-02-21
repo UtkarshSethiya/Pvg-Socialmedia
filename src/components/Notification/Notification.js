@@ -36,8 +36,11 @@ export default function Notification() {
 
 	return (
 		<div>
-			<div className="notification_cont">
-            <Stack sx={{ width: "100%" }} spacing={1}>
+            
+			<div className="notification_cont" >
+                <div>Notification</div>
+                <div className="notification_box">
+            <Stack sx={{ margin:"10px",textAlign:"center"}} spacing={1}>
                 {notification && notification.map((doc)=>{
                     let username=doc.user;
                     if(doc.user==user.name){
@@ -45,7 +48,7 @@ export default function Notification() {
                     }
                     return(
                         
-                        <Alert severity="info">
+                        <Alert style={{fontSize:"12px"  }} severity="success">
                             {username} {doc.description} <Moment fromNow>{doc.createdAt.toDate()}</Moment>
                         </Alert>
                    
@@ -53,6 +56,7 @@ export default function Notification() {
                 })}
            
            </Stack>
+           </div>
 			</div>
 		</div>
 	);

@@ -11,13 +11,16 @@ import File from '../svg/File';
 import './post.css'
 import { async } from '@firebase/util';
 import Like from '../svg/Like';
+import Comment from './Comment';
+import BasicMenu from './Menu';
 
 export default function Postmapping() {
 const[post,setPost]=useState([])
 const[id,setId]=useState([])
-
+const[postid,setPostid]=useState([])
 
 console.log(post)
+
 
 useEffect(()=>{
     const q = query(collection(db, "Post"),orderBy('createdAt','desc'))
@@ -43,14 +46,17 @@ return (
           var imgpost
           imgpost=<img  className='postimage' src={doc.media}></img>
         }
+        
  return(
-<div className='card_cont'>
+<div className='card_cont' key={doc.id}>
+
            <div className='card_info'>
+            
             <div className='user_info'>
            <img src={doc.profile } className='profileimage'  />
            <span className='postedby_name' style={{marginLeft:'5px'}}>{doc.postedBy} </span>
             </div>
-           <span className='post_time'></span>
+           <span className='post_time'>{doc.createdAt.toDate().toDateString()}</span>
            </div>
 
            <div className='postcontent'>
@@ -63,7 +69,8 @@ return (
             
          {imgpost}
            </div>
-          
+           <span> <Comment postid={doc.postid}  />  </span>  
+         
         </div>
 
 

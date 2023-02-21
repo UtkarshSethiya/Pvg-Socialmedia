@@ -26,7 +26,7 @@ function Allroute() {
         <div >  <Post />
         
         </div>
-        <div >
+        <div className="notification" >
          <Notification user={user}/>
         </div>
   

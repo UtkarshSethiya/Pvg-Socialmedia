@@ -1,12 +1,30 @@
 .notification_cont{
     margin: 20px;
-    height: 500px;
-    overflow-y: scroll;
-}
-.notification_title{
-    background-color: aqua;
-}
-.title{
-    margin-left: 25px;
+    color: white;
+    font-weight: 500;
+   padding: 17px;
+   vertical-align:middle;
+   background-color: rgba(40, 40, 40, 0.904);
+   /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;*/
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    border-radius: 25px;
     text-align: center;
 }
+.notification_box{
+    height: 450px;
+    border-radius: 20px;
+    overflow-y: scroll;
+    background-color: white;
+}
+.notification_box::-webkit-scrollbar {
+    width: 5px;
+  }
+  .notification_box::-webkit-scrollbar-thumb {
+    background: #c8c8c8; 
+    border-radius: 15px;
+  }
+  
+  /* Handle on hover */
+ .notification_box ::-webkit-scrollbar-thumb:hover {
+    background: #cecece; 
+  }  

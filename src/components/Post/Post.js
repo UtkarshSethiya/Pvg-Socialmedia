@@ -1,5 +1,6 @@
 import React from "react";
 import { useContext, useState, useEffect } from "react";
+
 import { AuthContext } from "../../context/auth";
 import { getDoc, doc, updateDoc } from "firebase/firestore";
 import { db, auth, storage } from "../../firebase/firebase";
@@ -28,7 +29,7 @@ export default function Post() {
 	const [user, setUser] = useState("");
 	const [text, settext] = useState("");
 	const [img, setImg] = useState("");
-	console.log(user);
+	
 
 	useEffect(() => {
 		getDoc(doc(db, "users", auth.currentUser.uid)).then((docSnap) => {
@@ -127,7 +128,7 @@ export default function Post() {
 					</button>
 				</div>
 			</form>
-
+			
 			<div className="postmapping_wrapper">
 				<Postmapping />
 			</div>

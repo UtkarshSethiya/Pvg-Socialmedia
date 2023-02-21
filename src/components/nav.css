@@ -4,8 +4,10 @@ nav{
     justify-content: space-between;
     height: 70px;
     padding: 0 20px;
-    background: rgb(162,160,215);
-    background: linear-gradient(90deg, rgb(89, 83, 255) 0%, rgba(15,10,83,1) 0%, rgb(62, 32, 255) 100%, rgba(130,121,255,1) 100%, rgba(247,247,247,1) 100%);
+     /*background: rgb(162,160,215);
+   background: linear-gradient(90deg, rgb(89, 83, 255) 0%, rgba(15,10,83,1) 0%, rgb(62, 32, 255) 100%, rgba(130,121,255,1) 100%, rgba(247,247,247,1) 100%);*/
+   background-color: #00003a;
+  background-image: linear-gradient(62deg, #00003a 0%, #005bee 100%);
 }
 nav a{
     color: white;

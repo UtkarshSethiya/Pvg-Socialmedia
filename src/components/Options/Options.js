@@ -35,7 +35,7 @@ console.log(user)
         <div className='prof_name'>{user.name}</div>
         <div className='prof_info'>Designation: Student</div>
         <div className='prof_info'>Class: BE Computer</div>
-        <div className='prof_info'>Email: dummymail@gmail.com</div>
+        <div className='prof_info'>Email: dummy_mail@gmail.com</div>
         
         </div> 
       </div>
@@ -47,7 +47,7 @@ console.log(user)
         <div className='option_wrappers '><button className='feedback btn'>Feedback / Support</button></div>
        
         <div className='option_wrappers '><button className='messenger btn'>Messenger</button></div>
-        <div className='option_wrappers '><Link to='/myusers' className='my_users btn'> My Users</Link></div>
+        <div className='option_wrappers '><button  className='my_users btn'> My Users</button></div>
 
     </div>
   )
