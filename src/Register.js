@@ -38,6 +38,7 @@ const handleSubmit=async(e)=>{
         await setDoc(doc(db,"users",result.user.uid),{
             uid:result.user.uid,
             name,
+            isDisabled:false,
             email,
             createdAt:Timestamp.fromDate(new Date()),
             isOnline:true,

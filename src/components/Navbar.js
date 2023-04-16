@@ -39,7 +39,7 @@ const{user}=useContext(AuthContext);
             
             {user ? (
         <>
-         <Link to='/register'>My Posts</Link>
+         <Link to='/Mypost'>My Posts</Link>
          <Link to='/register'>About</Link>
         <Link to='/profile'>Profile</Link>
         <button className='logoutbutton' onClick={handleSignout} >Logout</button>

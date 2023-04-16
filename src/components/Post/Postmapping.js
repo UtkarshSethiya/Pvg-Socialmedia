@@ -19,7 +19,7 @@ const[post,setPost]=useState([])
 const[id,setId]=useState([])
 const[postid,setPostid]=useState([])
 
-console.log(post)
+
 
 
 useEffect(()=>{
@@ -41,7 +41,7 @@ return (
     <div className='card_wrapper'>
        
     {post.map((doc)=>{
-        console.log(doc)
+      
         if(doc.media!=" "){
           var imgpost
           imgpost=<img  className='postimage' src={doc.media}></img>

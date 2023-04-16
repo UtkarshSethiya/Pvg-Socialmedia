@@ -15,6 +15,10 @@ import Home from './Home';
 import Profile from './Profile';
 import Allroute from './Allroute';
 import Myusers from './components/Options/Myusers';
+import Into from './Into';
+import Mypost from './components/Post/Mypost';
+import UserInfo from './Forgetpassword';
+import Forgetpassword from './Forgetpassword';
 function App() {
   
  
@@ -35,6 +39,9 @@ function App() {
     <Route path='/profile' element={<Profile/>}  />
    <Route path='/home' element={<Allroute/>} />
    <Route path='/myusers' element={<Myusers/>} />
+   <Route path='/' element={<Login/>} />
+   <Route path='/Mypost' element={<Mypost/>} />
+   <Route path='/Forgetpassword' element={<Forgetpassword/>} />
  
 
 

@@ -57,7 +57,7 @@ export default function Post() {
 			postcontent: text,
 			postid: user.uid + Timestamp.fromDate(new Date()).toString(),
 			postedBy: user.name,
-			profile: user.profile,
+			profile: user.profile || " ",
 			createdAt: Timestamp.fromDate(new Date()),
 			media: url || " ",
 			likes: 0,
@@ -72,10 +72,14 @@ export default function Post() {
 		settext("");
 		setImg("");
 	};
+	const blockuser=async()=>{
+		
+	}
 
 	return (
 		<div className="post_wrapper">
 			<br />
+			<button onClick={blockuser}>block</button>
 			<form className="post_form" onSubmit={handlesubmit}>
 				<div className="inputwrapper">
 					<img src={user.profile} className="profileimage" />

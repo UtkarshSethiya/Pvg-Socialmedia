@@ -11,7 +11,7 @@ import { collection, Timestamp, query, onSnapshot } from "firebase/firestore";
 import "./post.css";
 import Moment from "react-moment";
 import Commentimage from "../svg/Comment";
-
+import userimg from '../svg/user.png'
 
 
 
@@ -19,7 +19,7 @@ export default function Comment({ postid }) {
 	const [comment, setComment] = useState("");
 	const [getcomments, setCommentslist] = useState("");
 	const [user, setUser] = useState(" ");
-	console.log(user);
+	
 
 	const submitHandler = async (e) => {
 		e.preventDefault();
@@ -27,7 +27,7 @@ export default function Comment({ postid }) {
 			postid: postid,
 			comment: comment,
 			by: user.name,
-			profile: user.profile,
+			profile: user.profile || " ",
 			createdAt: Timestamp.fromDate(new Date()),
 		});
 		setComment(" ");
@@ -45,7 +45,7 @@ export default function Comment({ postid }) {
 		});
 	}, []);
 
-	console.log(getcomments);
+	
 
 	return (
 		<div>
@@ -83,7 +83,7 @@ export default function Comment({ postid }) {
 										return (
 											<div className="comment_wrapper">
 												<div className="commentuser_wrapper"> 
-                                               <div> <img className="commentimage" src={doc.profile} /> </div>
+                                               <div> <img className="commentimage" src={doc.profile==""? userimg:doc.profile} /> </div>
                                                <div className="content_wrapper">
                                                <div className="commentname"><div>{doc.by}</div> <div className="moment"> <Moment fromNow>{doc.createdAt.toDate()}</Moment></div></div> 
                                                <div className="content">{doc.comment}</div>

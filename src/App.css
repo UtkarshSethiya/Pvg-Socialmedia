@@ -2,15 +2,29 @@ body{
  overflow-x: hidden;
   background-size: cover;
   background-repeat: no-repeat;
+  background :rgb(249, 249, 249);
 
 }
-
+.google{
+  position: relative;
+  bottom: 6px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(59, 59, 59);
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
 section {
   max-width: 500px;
   margin: 0 auto;
   margin-top: 100px;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   padding: 20px;
   border-radius: 10px;
 }
@@ -153,6 +167,7 @@ section .form {
    
     width: 100vw;
 }
+
 .options{
   background-color: rgb(249, 249, 249);
 }
