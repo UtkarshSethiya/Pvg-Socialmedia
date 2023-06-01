@@ -9,6 +9,8 @@ function Users({users,selectUser,setChat,user1,setMsgs,msgs,chat}) {
 
 
 
+
+
 const chathandler=async()=>{
     selectUser(users)
     setChat(users)
@@ -47,7 +49,9 @@ useEffect(()=>{
 },[])
 
   return (
+   
     <div className={`user_wrapper ${chat.name === users.name && "selected_user"}`} onClick={chathandler}>
+    
         <div className='user_info'>
 <div className='user_detail'>
   <div>
@@ -76,6 +80,7 @@ useEffect(()=>{
         </div>
        
     </div>
+    
   )
 }
 

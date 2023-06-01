@@ -59,6 +59,7 @@ export default function Post() {
 			postedBy: user.name,
 			profile: user.profile || " ",
 			createdAt: Timestamp.fromDate(new Date()),
+			postuid:auth.currentUser.uid,
 			media: url || " ",
 			likes: 0,
 		});
@@ -78,8 +79,7 @@ export default function Post() {
 
 	return (
 		<div className="post_wrapper">
-			<br />
-			<button onClick={blockuser}>block</button>
+			
 			<form className="post_form" onSubmit={handlesubmit}>
 				<div className="inputwrapper">
 					<img src={user.profile} className="profileimage" />

@@ -19,6 +19,7 @@ const [text, setText] = useState("");
 const [img, setImg] = useState("");
 const [msgs,setMsgs]=useState([])
 
+
 useEffect(() => {
     const usersRef = collection(db, "users");
     // create query object
@@ -30,6 +31,7 @@ useEffect(() => {
         users.push(doc.data());
       });
       setUsers(users);
+     
     });
     return () => unsub();
   }, []);
@@ -80,10 +82,14 @@ setImg('');
   return (
     <div className="home_container">
     <div className="users_container">
+     
       {users.map((user) => (
         <Users
+       
+       
         msgs={msgs}
         setMsgs={setMsgs}
+       
           key={user.uid}
           users={user}
           selectUser={selectUser}

@@ -7,6 +7,7 @@ import { db,auth,storage } from '../../firebase/firebase';
 import userimg from '../svg/user.png'
 import Query from './Query';
 import { Link } from 'react-router-dom';
+import Allusers from './Allusers';
 
 export default function Options() {
 
@@ -33,9 +34,9 @@ console.log(user)
       <div className="prof_img_container">  <img src={ user.profile ||  userimg } alt="avatar" /></div>
        <div>
         <div className='prof_name'>{user.name}</div>
-        <div className='prof_info'>Designation: Student</div>
+        <div className='prof_info'>Designation: {user.role}</div>
         <div className='prof_info'>Class: BE Computer</div>
-        <div className='prof_info'>Email: dummy_mail@gmail.com</div>
+        <div className='prof_info'>Email: {user.email}</div>
         
         </div> 
       </div>
@@ -47,7 +48,7 @@ console.log(user)
         <div className='option_wrappers '><button className='feedback btn'>Feedback / Support</button></div>
        
         <div className='option_wrappers '><button className='messenger btn'>Messenger</button></div>
-        <div className='option_wrappers '><button  className='my_users btn'> My Users</button></div>
+        <div className='option_wrappers '><Allusers /></div>
 
     </div>
   )

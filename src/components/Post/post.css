@@ -193,6 +193,30 @@
   opacity: 0.6;
 
 }
+.deletebutton{
+  background-image: linear-gradient(62deg, #d20012 0%, #9c0037 100%);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  width: 90px;
+  border: none;
+  outline: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+
+}
+.deletebutton:hover{
+  background-image: linear-gradient(62deg, #d200125f 0%, #9c003743 100%);
+}
+.mypostcont{
+  position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    overflow: hidden;
+   
+    width: 100vw;
+}
 
 /* like component
   <div className='like' >
