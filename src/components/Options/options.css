@@ -35,7 +35,24 @@
     font-size: 13px;
     color: rgb(111, 111, 111);
     font-weight: 400;
+
 }  
+.deleteuser{
+    background-color: #950000;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 800;
+}
+
+.deleteuser:hover{
+    background-color: #95000096;
+}
+
 .btn{
     border: none;
     outline: none;
@@ -56,6 +73,14 @@
     
     background-color: #c30000;
     
+}
+.useremail{
+    font-size: 11px;
+    color: gray;
+    margin-left: 8px;
+}
+.alluser{
+   background-color: green; 
 }
 .feedback{
     
